@@ -13,6 +13,8 @@ public class WordScrambler {
 
 	public static void main(String[] args) {
 		
+		System.out.println("Word Scrabbler!\n");
+		
 		while (true) {
 		display();
 		}
