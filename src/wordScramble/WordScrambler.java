@@ -36,11 +36,11 @@ public class WordScrambler {
 	public static void display() {
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Type in a noun");
+		System.out.println("Type in a noun(thing)");
 		String input = scanner.nextLine();
 		nouns.add(input.toString());
 
-		System.out.println("Type in an adjective");
+		System.out.println("Type in an adjective(descriptor)");
 		String input2 = scanner.nextLine();
 		adjectives.add(input2.toString());
 
@@ -76,7 +76,7 @@ public class WordScrambler {
 		if (num == 0) {
 			System.out.println("The " + noun + " is very " + adj);
 		} else if (num == 1) {
-			System.out.println("How " + adj + " is your " + noun + " would you say?");
+			System.out.println("How " + adj + " is your " + noun + " would you say?... don't answer that");
 		} else if (num == 2) {
 			System.out.println("I really hate " + adj + " and " + adjTwo + " " + noun + "s.");
 		} else if (num == 3) {
@@ -90,7 +90,14 @@ public class WordScrambler {
 		} else if (num == 6) {
 			System.out.println(
 					"If feared for my " + noun + "'s life. I had never seen such a " + adj + " " + nounTwo + ".");
-		}
+		} else if (num == 7) {
+			System.out.println("Don't look at my " + noun + " like that!");
+		} else if (num == 8) {
+			System.out.println("It was a " + adj + " and " + adjTwo + " night when the " + noun + " came in.");
+		} else if (num == 9) {
+			System.out.println("Just me and my " + adj + " " + adjTwo + " " + noun + " against your big " + nounTwo + ".");
+		} else
+			System.out.println("Don't waste my " + noun + " on " + nounTwo + "s you " + adj + " dunderheads!");
 
 	}
 
